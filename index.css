@@ -1,0 +1,61 @@
+@import url(styles/reset.css);
+@import url(styles/typography.css);
+@import url(styles/forms.css);
+
+body {
+  margin: 0 auto;
+  width: 90vw;
+  width: 90dvw;
+}
+
+header {
+  background-color: white;
+  padding: 0.1rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+#outcome,
+#form {
+  display: none;
+}
+
+#outcome.show,
+#form.show {
+  display: block;
+}
+
+.players-list-form,
+.settings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0rem 2rem;
+}
+
+.players-list-form > div,
+.settings > div {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+footer > div {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
