@@ -6,14 +6,14 @@
 
     <meta
       name="description"
-      content="Fast basketball teams creation. Just enter the players list, their positions, number of teams, players per team, and let us organize them."
+      content="Fast basketball teams creation. Just enter the players list, their positions, number of teams, and let us organize them."
     />
     <meta name="keywords" content="basketball, teams, Fast basketball teams creation" />
 
     <meta property="og:title" content="Random Team by Trotters basketball Chile" />
     <meta
       property="og:description"
-      content="Fast basketball teams creation. Just enter the players list, their positions, number of teams, players per team, and let us organize them."
+      content="Fast basketball teams creation. Just enter the players list, their positions, number of teams, and let us organize them."
     />
     <meta property="og:image" content="" />
     <meta property="og:url" content="" />
@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="Random Team by Trotters basketball Chile" />
     <meta
       name="twitter:description"
-      content="Fast basketball teams creation. Just enter the players list, their positions, number of teams, players per team, and let us organize them."
+      content="Fast basketball teams creation. Just enter the players list, their positions, number of teams, and let us organize them."
     />
     <meta name="twitter:image" content="" />
 
@@ -44,10 +44,26 @@
       </div>
       <div id="form" class="show">
         <p>
-          Just enter the players list, their positions, number of teams, players per team, and let us organize them.
+          Just enter the players list, their positions, number of teams, and let us organize them.
         </p>
+        <h2>Teams</h2>
+        <div class="settings">
+          <div>
+            <select name="teamsConfig" id="teamsNumber">
+              <option value="2" selected>2 teams</option>
+              <option value="3">3 teams</option>
+              <option value="4">4 teams</option>
+              <option value="5">5 teams</option>
+              <option value="6">6 teams</option>
+            </select>
+          </div>
+        </div>
         <h2>Players</h2>
-        <p>Enter the platers names inside their positions boxes. Write one name per line in te boxes.</p>
+        <p>Enter the players names inside their position boxes. Write one name per line in te boxes.</p>
+        <p>
+          Remember to add as many players as teams you want to create. eg. If you want 5 teams, at least you have to
+          include 5 players per position.
+        </p>
         <div class="players-list-form">
           <div>
             <h3>Point Guard &#10122;</h3>
@@ -70,31 +86,11 @@
             <textarea name="playersList" id="centerPlayersList"></textarea>
           </div>
         </div>
-        <h2>Settings</h2>
-        <div class="settings">
-          <div>
-            <h3>Number</h3>
-            <select name="teamsConfig" id="teamsNumber">
-              <option value="2" selected>2 teams</option>
-              <option value="3">3 teams</option>
-              <option value="4">4 teams</option>
-              <option value="5">5 teams</option>
-            </select>
-          </div>
-          <div>
-            <h3>Players per team</h3>
-            <select name="teamsConfig" id="playerPerTeam">
-              <option value="3">3 players</option>
-              <option value="5" selected>5 players</option>
-            </select>
-          </div>
-        </div>
         <div class="actions">
           <button type="button" id="createBtn">Create</button>
         </div>
       </div>
       <div id="outcome">
-        <h2>Teams</h2>
         <div class="teams"></div>
         <div class="bench"></div>
         <div class="issues"></div>
@@ -116,7 +112,7 @@
           Design & Develop by
           <a href="https://gonzaloarenasf.cl" target="_blank" rel="noopener noreferrer">Gonzalo A. Arenas Flores</a>
         </p>
-        <p>©2024 / v1.0.0</p>
+        <p>©2024 / v1.0.1</p>
       </div>
     </footer>
   </body>

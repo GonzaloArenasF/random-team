@@ -6,6 +6,7 @@ textarea {
 
 select {
   border-radius: .5rem;
+  max-width: 300px;
   padding: .5rem;
   width: 100%;
 }
