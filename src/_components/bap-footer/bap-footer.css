@@ -1,0 +1,37 @@
+#bapFooter {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-font-color);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 1rem 4rem;
+}
+
+#bapFooter a {
+  color: var(--footer-font-color);
+}
+
+#bapFooter > article {
+  max-width: 600px;
+  width: 100%;
+}
+
+#bapFooter > article:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+/*
+ Tablet
+*/
+@media only screen and (max-width: 1200px) {
+  
+}
+
+/*
+ Phones
+*/
+@media only screen and (max-width: 932px) {
+  
+}

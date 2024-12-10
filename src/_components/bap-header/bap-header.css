@@ -1,0 +1,29 @@
+.bap-header {
+  align-items: center;
+  background-color: var(--header-bg-color);
+  color: var(--header-font-color);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.bap-header > div {
+  display: flex;
+  gap: 2rem;
+}
+
+/*
+ Tablet
+*/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/*
+ Phones
+*/
+@media only screen and (max-width: 932px) {
+
+}

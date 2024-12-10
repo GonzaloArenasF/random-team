@@ -1,0 +1,55 @@
+@import url(colors.css);
+@import url(titles.css);
+@import url(forms.css);
+
+* {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--link-active-color);
+}
+
+a:visited {
+  color: var(--link-visited-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.25rem;
+  margin: 0;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  height: fit-content;
+}
+
+p {
+  margin: 0;
+}
+
+small {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: lightblue;
+  padding: 1rem;
+}
