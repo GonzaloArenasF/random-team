@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Fast basketball teams creation. Just enter the players list, their positions, number of teams, and let us organize them."
+    />
+    <meta name="keywords" content="basketball, teams, Fast basketball teams creation" />
+
+    <meta property="og:title" content="Random Team by Trotters basketball Chile" />
+    <meta
+      property="og:description"
+      content="Fast basketball teams creation. Just enter the players list, their positions, number of teams, and let us organize them."
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Random Team by Trotters basketball Chile" />
+    <meta
+      name="twitter:description"
+      content="Fast basketball teams creation. Just enter the players list, their positions, number of teams, and let us organize them."
+    />
+    <meta name="twitter:image" content="" />
+
+    <link rel="canonical" href="" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="" type="image/x-icon" />
+
+    <script type="module" src="index.js"></script>
+
+    <title>Random Team by Trotters basketball Chile</title>
+  </head>
+  <body>
+    <header>
+      <h2>Random Team <small>by ®Trotters basketball Chile</small></h2>
+    </header>
+    <main>
+      <div id="intro">
+        <h1>Fast basketball teams creation</h1>
+      </div>
+      <div id="form" class="show">
+        <p>
+          Just enter the players list, their positions, number of teams, and let us organize them.
+        </p>
+        <h2>Teams</h2>
+        <div class="settings">
+          <div>
+            <select name="teamsConfig" id="teamsNumber">
+              <option value="2" selected>2 teams</option>
+              <option value="3">3 teams</option>
+              <option value="4">4 teams</option>
+              <option value="5">5 teams</option>
+              <option value="6">6 teams</option>
+            </select>
+          </div>
+        </div>
+        <h2>Players</h2>
+        <p>Enter the players names inside their position boxes. Write one name per line in te boxes.</p>
+        <p>
+          Remember to add as many players as teams you want to create. eg. If you want 5 teams, at least you have to
+          include 5 players per position.
+        </p>
+        <div class="players-list-form">
+          <div>
+            <h3>Point Guard &#10122;</h3>
+            <textarea name="playersList" id="pointGuardsPlayersList"></textarea>
+          </div>
+          <div>
+            <h3>Shooting Guard &#10123;</h3>
+            <textarea name="playersList" id="shootingGuardPlayersList"></textarea>
+          </div>
+          <div>
+            <h3>Small forward &#10124;</h3>
+            <textarea name="playersList" id="smallforwardPlayersList"></textarea>
+          </div>
+          <div>
+            <h3>Power forward &#10125;</h3>
+            <textarea name="playersList" id="powerforwardPlayersList"></textarea>
+          </div>
+          <div>
+            <h3>Center &#10126;</h3>
+            <textarea name="playersList" id="centerPlayersList"></textarea>
+          </div>
+        </div>
+        <div class="actions">
+          <button type="button" id="createBtn">Create</button>
+        </div>
+      </div>
+      <div id="outcome">
+        <div class="teams"></div>
+        <div class="bench"></div>
+        <div class="issues"></div>
+        <div class="actions">
+          <button type="button" id="returnBtn">Back to form</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        We want to help people to enjoy basketball as much as posible. We foster sport as the engine to develop a
+        healthy body and mind. So we release this tool for free use to help players to organice teams quick and easy.
+      </div>
+      <div>
+        <p>
+          <a href="https://www.trotters.cl/" target="_blank" rel="noopener noreferrer">®Trotters basketball Chile</a>
+        </p>
+        <p>
+          Design & Develop by
+          <a href="https://gonzaloarenasf.cl" target="_blank" rel="noopener noreferrer">Gonzalo A. Arenas Flores</a>
+        </p>
+        <p>©2024 / v1.0.1</p>
+      </div>
+    </footer>
+  </body>
+</html>
