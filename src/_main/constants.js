@@ -73,7 +73,7 @@ values.E = [
 ];
 
 values.APP_NAME = "Team manager";
-values.APP_VERSION = "v1.2.0";
+values.APP_VERSION = "v1.2.1";
 values.FIREBASE_AVAILABLE = false;
 
 //  Modify before deploy

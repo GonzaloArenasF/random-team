@@ -46,7 +46,8 @@ button.btn-3x {
 }
 
 input[type=text],
-textarea {
+textarea,
+select {
   background-color: var(--input-bg-color);
   border: 1px solid var(--input-border-color);
   border-radius: .5rem;
@@ -60,5 +61,13 @@ textarea::placeholder {
 }
 
 textarea {
-  min-height: 200px;
+  height: calc(1rem * 6);
+  width: 100%;
+}
+
+select {
+  border-radius: .5rem;
+  max-width: 300px;
+  padding: .5rem;
+  width: 100%;
 }

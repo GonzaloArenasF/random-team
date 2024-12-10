@@ -51,5 +51,17 @@ export const esES = {
       },
       body: {},
     },
+    randomTeams: {
+      head: {
+        title: "Random teams by @Trotters basketball Chile",
+        meta: {
+          title: "Random teams by @Trotters basketball Chile",
+          description:
+            "Fast basketball teams creation. Just enter the players list, their positions, number of teams, and let us organize them.",
+          keywords: "basketball, teams, Fast basketball teams creation",
+        },
+      },
+      body: {},
+    },
   },
 };

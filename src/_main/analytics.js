@@ -1,10 +1,10 @@
 /**
  * Analytics events
- * 
- * Use Firebase Analytics. 
- * 
+ *
+ * Use Firebase Analytics.
+ *
  * For standar integration, use the function logAnalyticEvent()
- * 
+ *
  * Every event has to be integrated in its particular set of events like this:
  * const groupOfEvents = {
  *  eventName: () => logAnalyticEvent({
@@ -14,14 +14,14 @@
  *      userType: USER_TYPE.USER,
  *    }),
  * }
- * 
+ *
  * Finally, add the group of events to the analytic object at the end of the file, like this:
  * export const analytic = {
  *  logEvent: {
  *      ...groupOfEvents,
  *    },
  * }
- * 
+ *
  */
 import { logAnalyticEvent } from "./firebaseInit.js";
 
@@ -41,13 +41,9 @@ const EVENT_TYPE = {
   PROCESS: "process",
 };
 
-const footerEvents = {
-  
-};
+const footerEvents = {};
 
-const headerEvents = {
-  
-};
+const headerEvents = {};
 
 const landingPageEvents = {
   enterLandingPage: () =>
@@ -69,11 +65,22 @@ const notFoundEvents = {
     }),
 };
 
+const randomTemasEvents = {
+  enterRandomTeamsPage: () =>
+    logAnalyticEvent({
+      type: EVENT_TYPE.ENTER_PAGE,
+      name: "enter_page",
+      func: "random_teams",
+      userType: USER_TYPE.USER,
+    }),
+};
+
 export const analytic = {
   logEvent: {
     ...footerEvents,
     ...headerEvents,
     ...landingPageEvents,
     ...notFoundEvents,
+    ...randomTemasEvents,
   },
 };

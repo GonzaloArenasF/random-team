@@ -30,6 +30,14 @@ export const routes = [
       signIn: false,
     },
   },
+  {
+    pathname: "/pages/random-teams",
+    component: null,
+    navigation: NAVIGATION_TYPES.REDIRECT,
+    validate: {
+      signIn: false,
+    },
+  },
 ];
 
 const isAValidRoute = (pathname) => {
