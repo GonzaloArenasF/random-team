@@ -5,7 +5,7 @@ export const esES = {
       tc: {
         title: "Términos y condiciones",
         summary:
-          "Team Manager es una herramienta para gestionar equipos de basketball. Su uso es exlusivo de Trotters basketball Chile. Los usuarios son responsables de la información que ingresan. Trotters de Chile se reservan el derecho a modificar estos términos.",
+          "Team Manager es una herramienta para gestionar equipos de basketball. Su uso es exlusivo de Trotters basketball Chile. Los usuarios son responsables de la información que ingresan. Trotters Chile se reservan el derecho a modificar estos términos.",
       },
     },
     bapHeader: {
@@ -49,7 +49,66 @@ export const esES = {
           keywords: "Basket, Basketball, Basquetbol, team, equipo, administración, management",
         },
       },
-      body: {},
+      body: {
+        features: {
+          title: "Utilidades",
+          checkAssistance: {
+            title: "Asistencia",
+            buttonLabel: "Registrar",
+            option: {
+              training: "Entrenamientos",
+              friendlyMatch: "Amistosos",
+              officialMatch: "Partidos ofciiales",
+            },
+          },
+          teamsAdmin: {
+            title: "Equipos",
+            buttonLabel: "Organizar",
+            option: {
+              random: "Aleatorios",
+              official: "Oficiales",
+            },
+          },
+          statistics: {
+            title: "Estadísticas",
+            buttonLabel: "Ver",
+            option: {
+              byMatch: "Por partido",
+              team: "Nómina",
+            },
+          },
+          playersAdmin: {
+            title: "Jugadores",
+            buttonLabel: "Administrar",
+            option: {
+              personalData: "Datos personales",
+              statistics: "Estadísticas",
+              fees: "Cuotas",
+            },
+          },
+          agenda: {
+            title: "Agenda",
+            buttonLabel: "Gestionar",
+            option: {
+              tournaments: "Torneos",
+              trainings: "Entrenamientos",
+              others: "Otros",
+            },
+          },
+          match: {
+            title: "Partido",
+            buttonLabel: "Jugar",
+            option: {
+              quick: "Partido rápido",
+              official: "Oficial",
+              statistics: "Tomar estadísticas",
+            },
+          },
+        },
+        schedule: {
+          title: "Agenda"  
+        }
+      },
     },
     randomTeams: {
       head: {

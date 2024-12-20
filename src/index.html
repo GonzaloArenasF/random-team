@@ -30,7 +30,155 @@
       <bap-header></bap-header>
     </header>
     <main>
-      
+      <section class="features">
+        <h1>{features.title}</h1>
+        <article>
+          <div>
+            <h2 class="lock">{features.checkAssistance.title}</h2>
+            <ul>
+              <li>{features.checkAssistance.option.training}</li>
+              <li>{features.checkAssistance.option.friendlyMatch}</li>
+              <li>{features.checkAssistance.option.officialMatch}</li>
+            </ul>
+          </div>
+          <div>
+            <button type="button" id="checkAssistanceBtn">{features.checkAssistance.buttonLabel}</button>
+          </div>
+        </article>
+        <article>
+          <div>
+            <h2>{features.teamsAdmin.title}</h2>
+            <ul>
+              <li>{features.teamsAdmin.option.random}</li>
+              <li class="lock">{features.teamsAdmin.option.official}</li>
+            </ul>
+          </div>
+          <div>
+            <button type="button" id="teamsAdminBtn">{features.teamsAdmin.buttonLabel}</button>
+          </div>
+        </article>
+        <article>
+          <div>
+            <h2>{features.statistics.title}</h2>
+            <ul>
+              <li>{features.statistics.option.byMatch}</li>
+              <li>{features.statistics.option.team}</li>
+            </ul>
+          </div>
+          <div>
+            <button type="button" id="lookStatisticsBtn">{features.statistics.buttonLabel}</button>
+          </div>
+        </article>
+        <article>
+          <div>
+            <h2>{features.playersAdmin.title}</h2>
+            <ul>
+              <li class="lock">{features.playersAdmin.option.personalData}</li>
+              <li>{features.playersAdmin.option.statistics}</li>
+              <li class="lock">{features.playersAdmin.option.fees}</li>
+            </ul>
+          </div>
+          <div>
+            <button type="button" id="playersAdminBtn">{features.playersAdmin.buttonLabel}</button>
+          </div>
+        </article>
+        <article>
+          <div>
+            <h2>{features.agenda.title}</h2>
+            <ul>
+              <li>{features.agenda.option.tournaments}</li>
+              <li>{features.agenda.option.trainings}</li>
+              <li>{features.agenda.option.others}</li>
+            </ul>
+          </div>
+          <div>
+            <button type="button" id="agendaBtn">{features.agenda.buttonLabel}</button>
+          </div>
+        </article>
+        <article>
+          <div>
+            <h2>{features.match.title}</h2>
+            <ul>
+              <li>{features.match.option.quick}</li>
+              <li class="lock">{features.match.option.official}</li>
+              <li class="lock">{features.match.option.statistics}</li>
+            </ul>
+          </div>
+          <div>
+            <button type="button" id="matchBtn">{features.match.buttonLabel}</button>
+          </div>
+        </article>
+      </section>
+      <section class="highlight-dates">
+        <div>
+          <h1>{schedule.title}</h1>
+          <article>
+            <div>
+              <span>24</span>
+              <span>Diciembre</span>
+            </div>
+            <div>
+              <h3>Torneo Trotters Pera</h3>
+              <p>Todos invitados al Arena Trotters</p>
+            </div>
+          </article>
+          <article>
+            <div>
+              <span>24</span>
+              <span>Diciembre</span>
+            </div>
+            <div>
+              <h3>Torneo Trotters Pera</h3>
+              <p>Todos invitados al Arena Trotters</p>
+            </div>
+          </article>
+          <article>
+            <div>
+              <span>24</span>
+              <span>Diciembre</span>
+            </div>
+            <div>
+              <h3>Torneo Trotters Pera</h3>
+              <p>Todos invitados al Arena Trotters</p>
+            </div>
+          </article>
+          <article>
+            <div>
+              <span>24</span>
+              <span>Diciembre</span>
+            </div>
+            <div>
+              <h3>Torneo Trotters Pera</h3>
+              <p>Todos invitados al Arena Trotters</p>
+            </div>
+          </article>
+          <article>
+            <div>
+              <span>24</span>
+              <span>Diciembre</span>
+            </div>
+            <div>
+              <h3>Torneo Trotters Pera</h3>
+              <p>Todos invitados al Arena Trotters</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="highlight-players">
+        <article>
+          <figure>
+            <img src="https://www.trotters.cl/wp-content/themes/wp-base-uilab/images/player1@2x.png" alt="player" />
+          </figure>
+          <h3>Gonzalo A. Arenas Flores</h3>
+          <strong>Power forward</strong>
+          <ul>
+            <li>Points avg: 1 * 3pts / 4 * 2pts / 4 * FT = 15 pts</li>
+            <li>Rebounds Off/Def avg: 5 / 12</li>
+            <li>Fouls avg: 2</li>
+            <li>Passes A/F: 10/2</li>
+          </ul>
+        </article>
+      </section>
     </main>
     <footer id="footerPage">
       <bap-footer></bap-footer>

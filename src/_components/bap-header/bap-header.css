@@ -6,12 +6,18 @@
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px;
-  width: 100%;
+  padding: 0 1rem;
 }
 
-.bap-header > div {
+.bap-header > a > h2 {
+  align-items: end;
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bap-header > a > h2 > small {
+  margin-bottom: 4px;
 }
 
 /*

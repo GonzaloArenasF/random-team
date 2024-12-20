@@ -1,9 +1,94 @@
 @import url(style/main.css);
 
-main {
+.lock::before {
+  content: " \01F512";
+}
+
+main > section {
+  padding: 3rem 1rem 6rem 1rem;
+}
+
+main > section h1 {
+  width: 100%;
+}
+
+main > section.features {  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 1rem;
+}
+
+main > section.features > article {
+  border: 1px solid var(--font-color);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
+  width: 300px;
+}
+
+main > section.features > article ul {
+  padding-left: 0;
+}
+
+main > section.features > article ul li {
+  list-style: none;
+}
+
+main > section.highlight-dates {
+  background-color: lightblue;
+}
+
+main > section.highlight-dates > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+main > section.highlight-dates > div > article {
+  border: 1px solid var(--font-color);
+  border-radius: .5rem;
+  display: flex;
+  max-width: 580px;
+  min-width: 300px;
+  width: 100%;
+}
+
+main > section.highlight-dates > div > article > div {
+  padding: .5rem;
+}
+
+main > section.highlight-dates > div > article > div:nth-child(1) {
+  background-color: var(--font-color);
+  color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+main > section.highlight-dates > div > article > div:nth-child(1) span:nth-child(1) {
+  font-weight: 900;
+  font-size: 3.5rem;
+  margin-top: .8rem;
+}
+
+main > section.highlight-players {
+  background-color: lightslategray;
+}
+
+main > section.highlight-players img {
+  object-fit: contain;
+  width: 100%;
 }
 
 /*
