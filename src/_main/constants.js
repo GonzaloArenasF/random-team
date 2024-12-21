@@ -66,17 +66,15 @@ values.RECAPTCHA = {
 
 // Environment
 values.E = [
-  "http://127.0.0.1:8080",
   "http://172.20.10.2:8080",
-  "https://gonzalo-arenas---web-site--qa-nyko3ir4.web.app",
   "https://gonzaloarenasf.cl",
 ];
 
 values.APP_NAME = "Team manager";
-values.APP_VERSION = "v1.2.2";
+values.APP_VERSION = "v1.2.3";
 values.FIREBASE_AVAILABLE = false;
 
 //  Modify before deploy
-export const ENV_URL = values.E[1];
+export const ENV_URL = values.E[0];
 
 export const CONSTANT = values;

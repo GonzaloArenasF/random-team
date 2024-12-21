@@ -2,6 +2,7 @@
   background-color: var(--footer-bg-color);
   color: var(--footer-font-color);
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   padding: 2rem 1rem 4rem;

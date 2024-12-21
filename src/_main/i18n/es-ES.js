@@ -74,6 +74,7 @@ export const esES = {
             buttonLabel: "Ver",
             option: {
               byMatch: "Por partido",
+              byTournament: "Por torneo",
               team: "Nómina",
             },
           },
@@ -106,8 +107,11 @@ export const esES = {
           },
         },
         schedule: {
-          title: "Agenda"  
-        }
+          title: "Próximos eventos"  
+        },
+        players: {
+          title: "Jugadores destacados"  
+        },
       },
     },
     randomTeams: {

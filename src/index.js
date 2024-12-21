@@ -32,6 +32,7 @@ applyI18n(() => {
     .replace("{features.statistics.title}", i18n.body.features.statistics.title)
     .replace("{features.statistics.buttonLabel}", i18n.body.features.statistics.buttonLabel)
     .replace("{features.statistics.option.byMatch}", i18n.body.features.statistics.option.byMatch)
+    .replace("{features.statistics.option.byTournament}", i18n.body.features.statistics.option.byTournament)
     .replace("{features.statistics.option.team}", i18n.body.features.statistics.option.team)
     .replace("{features.playersAdmin.title}", i18n.body.features.playersAdmin.title)
     .replace("{features.playersAdmin.buttonLabel}", i18n.body.features.playersAdmin.buttonLabel)
@@ -48,7 +49,8 @@ applyI18n(() => {
     .replace("{features.match.option.quick}", i18n.body.features.match.option.quick)
     .replace("{features.match.option.official}", i18n.body.features.match.option.official)
     .replace("{features.match.option.statistics}", i18n.body.features.match.option.statistics)
-    .replace("{schedule.title}", i18n.body.schedule.title);
+    .replace("{schedule.title}", i18n.body.schedule.title)
+    .replace("{players.title}", i18n.body.players.title);
 });
 
 window.addEventListener("load", () => {

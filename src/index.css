@@ -23,7 +23,7 @@ main > section.features {
 
 main > section.features > article {
   border: 1px solid var(--font-color);
-  border-radius: .5rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,7 +41,7 @@ main > section.features > article ul li {
 }
 
 main > section.highlight-dates {
-  background-color: lightblue;
+  background-color: lightgrey;
 }
 
 main > section.highlight-dates > div {
@@ -56,7 +56,7 @@ main > section.highlight-dates > div {
 
 main > section.highlight-dates > div > article {
   border: 1px solid var(--font-color);
-  border-radius: .5rem;
+  border-radius: 1rem;
   display: flex;
   max-width: 580px;
   min-width: 300px;
@@ -64,6 +64,8 @@ main > section.highlight-dates > div > article {
 }
 
 main > section.highlight-dates > div > article > div {
+  border-top-left-radius: .9rem;
+  border-bottom-left-radius: .9rem;
   padding: .5rem;
 }
 
@@ -79,16 +81,87 @@ main > section.highlight-dates > div > article > div:nth-child(1) {
 main > section.highlight-dates > div > article > div:nth-child(1) span:nth-child(1) {
   font-weight: 900;
   font-size: 3.5rem;
-  margin-top: .8rem;
+  margin-top: .9rem;
+}
+
+main > section.highlight-dates > div > article > div:nth-child(2) {
+  background-color: var(--bg-color);
+  border-radius: 0;
+  border-bottom-right-radius: .9rem;
+  border-top-right-radius: .9rem;
+  width: 100%;
 }
 
 main > section.highlight-players {
   background-color: lightslategray;
 }
 
-main > section.highlight-players img {
+main > section.highlight-players > h1 {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+main > section.highlight-players > div {
+  display: flex;
+  gap: 8rem;
+  margin-top: 3rem;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+main > section.highlight-players > div > article {
+  animation: horizontal-scrolling 60s linear infinite;
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  height: max-content;
+  min-width: 250px;
+  padding: 1rem;
+  width: 250px;
+}
+
+@keyframes horizontal-scrolling {
+  0%{
+    transform: translateX(100dvw);
+  }
+  100% {
+    transform: translateX(-150dvw);
+  }
+}
+
+main > section.highlight-players > div > article > figure {
+  height: 50%;
+}
+
+main > section.highlight-players > div > article > figure > img {
+  aspect-ratio: 2/3;
+  height: 100%;
   object-fit: contain;
   width: 100%;
+}
+
+main > section.highlight-players > div > article > h3 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  gap: 1rem;
+  text-align: center;
+}
+
+main > section.highlight-players > div > article > h3 > small {
+  background-color: var(--font-color);
+  color: var(--bg-color);
+  border-radius: 1rem;
+  padding: .6rem 1rem;
+}
+
+main > section.highlight-players > div > article ul {
+  padding-left: 0;
+}
+
+main > section.highlight-players > div > article > ul {
+  padding-left: 2rem;
 }
 
 /*
@@ -101,4 +174,12 @@ main > section.highlight-players img {
  Phones
 */
 @media only screen and (max-width: 932px) {
+  @keyframes horizontal-scrolling {
+    0%{
+      transform: translateX(100dvw);
+    }
+    100% {
+      transform: translateX(-700dvw);
+    }
+  }
 }

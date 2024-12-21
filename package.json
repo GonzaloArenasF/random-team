@@ -1,6 +1,6 @@
 {
   "name": "team-manager",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Basketball team management",
   "main": "index.js",
   "scripts": {
