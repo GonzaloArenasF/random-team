@@ -20,6 +20,18 @@
   margin-bottom: 4px;
 }
 
+.bap-header > .actions button:nth-child(2) {
+  display: none;
+}
+
+.bap-header > .actions.login button:nth-child(1) {
+  display: none;
+}
+
+.bap-header > .actions.login button:nth-child(2) {
+  display: block;
+}
+
 /*
  Tablet
 */

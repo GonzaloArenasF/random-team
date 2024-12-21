@@ -32,7 +32,7 @@
     <main>
       <section class="features">
         <h1>{features.title}</h1>
-        <article>
+        <article class="sesionValidation">
           <div>
             <h2 class="lock">{features.checkAssistance.title}</h2>
             <ul>
@@ -50,11 +50,24 @@
             <h2>{features.teamsAdmin.title}</h2>
             <ul>
               <li>{features.teamsAdmin.option.random}</li>
-              <li class="lock">{features.teamsAdmin.option.official}</li>
+              <li class="lock sesionValidation">{features.teamsAdmin.option.official}</li>
             </ul>
           </div>
           <div>
             <button type="button" id="teamsAdminBtn">{features.teamsAdmin.buttonLabel}</button>
+          </div>
+        </article>
+        <article>
+          <div>
+            <h2>{features.match.title}</h2>
+            <ul>
+              <li>{features.match.option.quick}</li>
+              <li class="lock sesionValidation">{features.match.option.official}</li>
+              <li class="lock sesionValidation">{features.match.option.statistics}</li>
+            </ul>
+          </div>
+          <div>
+            <button type="button" id="matchBtn">{features.match.buttonLabel}</button>
           </div>
         </article>
         <article>
@@ -70,13 +83,12 @@
             <button type="button" id="lookStatisticsBtn">{features.statistics.buttonLabel}</button>
           </div>
         </article>
-        <article>
+        <article class="sesionValidation">
           <div>
-            <h2>{features.playersAdmin.title}</h2>
+            <h2 class="lock">{features.playersAdmin.title}</h2>
             <ul>
-              <li class="lock">{features.playersAdmin.option.personalData}</li>
-              <li>{features.playersAdmin.option.statistics}</li>
-              <li class="lock">{features.playersAdmin.option.fees}</li>
+              <li>{features.playersAdmin.option.personalData}</li>
+              <li>{features.playersAdmin.option.fees}</li>
             </ul>
           </div>
           <div>
@@ -94,19 +106,6 @@
           </div>
           <div>
             <button type="button" id="agendaBtn">{features.agenda.buttonLabel}</button>
-          </div>
-        </article>
-        <article>
-          <div>
-            <h2>{features.match.title}</h2>
-            <ul>
-              <li>{features.match.option.quick}</li>
-              <li class="lock">{features.match.option.official}</li>
-              <li class="lock">{features.match.option.statistics}</li>
-            </ul>
-          </div>
-          <div>
-            <button type="button" id="matchBtn">{features.match.buttonLabel}</button>
           </div>
         </article>
       </section>

@@ -65,13 +65,34 @@ const notFoundEvents = {
     }),
 };
 
-const randomTemasEvents = {
-  enterRandomTeamsPage: () =>
+const loginEvents = {
+  openLoginDialog: () =>
     logAnalyticEvent({
-      type: EVENT_TYPE.ENTER_PAGE,
-      name: "enter_page",
-      func: "random_teams",
+      type: EVENT_TYPE.OPEN_DIALOG,
+      name: "open_dialog",
+      func: "login",
       userType: USER_TYPE.USER,
+    }),
+  doLogin: () =>
+    logAnalyticEvent({
+      type: EVENT_TYPE.LOGIN,
+      name: "login",
+      func: "login",
+      userType: USER_TYPE.USER,
+    }),
+  cancelLogin: () =>
+    logAnalyticEvent({
+      type: EVENT_TYPE.LOGIN,
+      name: "cancel_login",
+      func: "login",
+      userType: USER_TYPE.USER,
+    }),
+  doLogout: () =>
+    logAnalyticEvent({
+      type: EVENT_TYPE.LOGOUT,
+      name: "logout",
+      func: "login",
+      userType: USER_TYPE.ADMIN,
     }),
 };
 
@@ -81,6 +102,6 @@ export const analytic = {
     ...headerEvents,
     ...landingPageEvents,
     ...notFoundEvents,
-    ...randomTemasEvents,
+    ...loginEvents,
   },
 };

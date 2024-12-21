@@ -1,5 +1,13 @@
 @import url(style/main.css);
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  justify-content: space-between;
+}
+
 main {
-  
+  padding: 1rem;
+  text-align: center;
 }

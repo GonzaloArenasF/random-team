@@ -4,6 +4,14 @@
   content: " \01F512";
 }
 
+main {
+  display: none;
+}
+
+main.ready {
+  display: block;
+}
+
 main > section {
   padding: 3rem 1rem 6rem 1rem;
 }

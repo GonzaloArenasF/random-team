@@ -1,5 +1,6 @@
 import { setCustomComponents } from "./_components/customComponentsRegistration.js";
 import { analytic } from "./_main/analytics.js";
+import { userSession } from "./_main/auth.js";
 import { CONSTANT } from "./_main/constants.js";
 import { getI18nContent, applyI18n } from "./_main/i18n.js";
 import { sessionStartedControl, routes } from "./_main/router.js";
@@ -37,7 +38,6 @@ applyI18n(() => {
     .replace("{features.playersAdmin.title}", i18n.body.features.playersAdmin.title)
     .replace("{features.playersAdmin.buttonLabel}", i18n.body.features.playersAdmin.buttonLabel)
     .replace("{features.playersAdmin.option.personalData}", i18n.body.features.playersAdmin.option.personalData)
-    .replace("{features.playersAdmin.option.statistics}", i18n.body.features.playersAdmin.option.statistics)
     .replace("{features.playersAdmin.option.fees}", i18n.body.features.playersAdmin.option.fees)
     .replace("{features.agenda.title}", i18n.body.features.agenda.title)
     .replace("{features.agenda.buttonLabel}", i18n.body.features.agenda.buttonLabel)
@@ -53,6 +53,27 @@ applyI18n(() => {
     .replace("{players.title}", i18n.body.players.title);
 });
 
+function validateFeatures() {
+  const mainSection = document.querySelector("main");
+
+  userSession.onAuthStateChanged(() => {
+    if (!mainSection.classList.contains("ready")) {
+      if (userSession.currentUser) {
+        document.querySelectorAll(".sesionValidation").forEach((element) => {
+          element.style.display = "initial";
+        });
+      } else {
+        document.querySelectorAll(".sesionValidation").forEach((element) => {
+          element.style.display = "none";
+        });
+      }
+
+      mainSection.classList.add("ready");
+    }
+  });
+}
+
 window.addEventListener("load", () => {
   analytic.logEvent.enterLandingPage();
+  validateFeatures();
 });

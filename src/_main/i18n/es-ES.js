@@ -11,15 +11,25 @@ export const esES = {
     bapHeader: {
       subtitle: "by ®Trotters basketball Chile",
     },
+    bapAuthDialog: {
+      title: "Login",
+      email: "Email",
+      pass: "Contraseña",
+      loginBtn: "Login",
+      cancelBtn: "Cancelar",
+    },
   },
   page: {
     cross: {
       notification: {
+        success: "Bienvenido",
         loginFail:
-          "No pudimos iniciar sesión. Por favor, comprueba si tu navegador bloquea las ventanas pop-up e intenta nuevamente.",
+          "No pudimos iniciar sesión. Por favor, intenta nuevamente.",
         logoutFail: "No pudimos terminar tu sesión. Por favor, recarga la página e intenta nuevamente.",
         notAllowedEnteringPage: "No estás habilitado para entrar a esta página.",
         errorGettingQueryParams: "No pudimos obtener la información para acceder.",
+        noEmail: "No has ingresado tu email",
+        noPass: "No has ingresado tu contraseña",
         storage: {
           errorGetting: "No pudimos obtener tu información. Intenta nuevamente",
           errorSaving: "No pudimos guardar tu información. Intenta nuevamente",
@@ -83,7 +93,6 @@ export const esES = {
             buttonLabel: "Administrar",
             option: {
               personalData: "Datos personales",
-              statistics: "Estadísticas",
               fees: "Cuotas",
             },
           },
@@ -100,17 +109,17 @@ export const esES = {
             title: "Partido",
             buttonLabel: "Jugar",
             option: {
-              quick: "Partido rápido",
+              quick: "Rápido",
               official: "Oficial",
               statistics: "Tomar estadísticas",
             },
           },
         },
         schedule: {
-          title: "Próximos eventos"  
+          title: "Próximos eventos",
         },
         players: {
-          title: "Jugadores destacados"  
+          title: "Jugadores destacados",
         },
       },
     },

@@ -1,4 +1,8 @@
 <nav class="bap-header light-mode" aria-label="Main navigation">
   <a href="/"><h2>{APP-NAME} <small>{subtitle}</small></h2></a>
-  <button type="button" id="loginBtn">Login</button>
+  <div class="actions">
+    <button type="button" id="openLoginBtn">Login</button>
+    <button type="button" id="logoutBtn" class="btn-secondary">Logout</button>
+  </div>
 </nav>
+<bap-auth-dialog></bap-auth-dialog>
